@@ -50,7 +50,8 @@ static void CountCharactersOfFile(string path)
     Console.WriteLine("Init count of characters");
     using Stream fileStream = File.OpenRead(path);
 
-    byte[] buffer = new byte[1024];
+    int bufferSize = 1024;
+    byte[] buffer = new byte[bufferSize];
 
     int bytesRead = 0;
     Dictionary<string, int> tableOfCharacters = [];
