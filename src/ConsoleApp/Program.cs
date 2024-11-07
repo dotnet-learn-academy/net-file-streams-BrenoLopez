@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Text;
 
-Console.WriteLine(Environment.ProcessId);
 
 string path = "../../test.txt";
 
