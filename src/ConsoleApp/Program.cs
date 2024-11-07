@@ -1,12 +1,13 @@
 ﻿using System.Diagnostics;
 using System.Text;
 
+Console.WriteLine(Environment.ProcessId);
 
 string path = "../../test.txt";
 
-int sizeFile = (int)Math.Pow(1024, 3);
+int fileSize = (int)Math.Pow(1024, 3);
 
-await CreateFile(path, sizeFile);
+await CreateFile(path, fileSize);
 
 Stopwatch stopwatch = new();
 stopwatch.Start();
