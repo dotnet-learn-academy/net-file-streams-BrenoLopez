@@ -40,8 +40,9 @@ static async Task CreateFile(string path, long fileSize)
         totalWritten += bytesToWrite;
 
         long processing = totalWritten * 100 / fileSize;
-        Console.WriteLine($"Processing: {processing} %");
+        Console.Write($"\rProcessing: {processing} %");
     }
+    Console.WriteLine();
     Console.WriteLine("Created file");
 }
 
